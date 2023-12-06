@@ -1,6 +1,7 @@
 {
     "name": "greghunt/partial-json",
     "description": "Parse incomplete JSON. Great for streamed JSON.",
+    "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -15,7 +16,7 @@
     ],
     "minimum-stability": "alpha",
     "require-dev": {
-        "php": "^7.3",
+        "php": ">=7.3",
         "pestphp/pest": "^2.28"
     },
     "config": {
