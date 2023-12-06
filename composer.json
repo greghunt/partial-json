@@ -14,7 +14,7 @@
             "email": "freshbrewedweb@gmail.com"
         }
     ],
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "require-dev": {
         "php": "^8.2",
         "pestphp/pest": "^2.28"
