@@ -1,0 +1,26 @@
+{
+    "name": "greghunt/partial-json",
+    "description": "Parse incomplete JSON. Great for streamed JSON.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "GregHunt\\PartialJson\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Greg Hunt",
+            "email": "freshbrewedweb@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require-dev": {
+        "php": "^7.3",
+        "pestphp/pest": "^2.28"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
