@@ -29,11 +29,11 @@ class JsonParser
         };
     }
 
-    public function parse($s)
+    public function parse($s, bool $associative = true)
     {
         if (strlen($s) >= 1) {
             try {
-                return json_decode($s, true, 512, JSON_THROW_ON_ERROR);
+                return json_decode($s, $associative, 512, JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 list($data, $reminding) = $this->parseAny($s, $e);
                 $this->lastParseReminding = $reminding;
@@ -43,7 +43,7 @@ class JsonParser
                 return $data;
             }
         } else {
-            return json_decode('{}', true);
+            return json_decode('{}', $associative);
         }
     }
 
